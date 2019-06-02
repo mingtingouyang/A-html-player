@@ -1,0 +1,74 @@
+
+.player{
+	width: 900px;
+	height: 560px;
+	margin: 0 auto;
+}
+.player .media{
+	width: 900px;
+	height: auto;
+	position: relative;
+	z-index: 0;
+}
+
+.player .controlBar{
+	width: 900px;
+	height: 40px;
+	display: flex;
+	margin-top: 10px;
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 15px;
+}
+.player .controlBar .play{
+	width: 40px;
+	height: 40px;
+	background-image: url("../img/playOn.png");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: 10;
+}
+.player .controlBar .process{
+	flex:1;
+	height: 4px;
+	position: relative;
+	margin: 18px 15px 18px 5px;
+	background-color: white;
+	z-index: 2;
+}
+.player .controlBar .process .cursor{
+	height: 16px;
+	width: 16px;
+	margin: 12px 0 12px -8px;
+	background-color: black;
+	position: absolute;
+	border-radius: 8px;
+	left: 0;
+	top: -18px;
+	z-index: 3;
+
+}
+.player .controlBar .process .line{
+	height: 4px;
+	position: absolute;
+	width: 0px;
+	left: 0;
+	top: 0;
+	background-color: black;
+}
+.player .controlBar .full{
+	width: 40px;
+	height: 40px;
+	background-image: url("../img/fullscreen.png");
+	background-size: 65% 65%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.back{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
